@@ -144,12 +144,14 @@ export default function Home() {
       <GameWonModal
         isOpen={showGameWonModal}
         onClose={() => setShowGameWonModal(false)}
+        // eslint-disable-next-line react-hooks/refs
         guessHistory={guessHistoryRef.current}
         perfection={getPerfection(mistakesRemaining)}
       />
       <GameLostModal
         isOpen={showGameLostModal}
         onClose={() => setShowGameLostModal(false)}
+        // eslint-disable-next-line react-hooks/refs
         guessHistory={guessHistoryRef.current}
       />
     </>
